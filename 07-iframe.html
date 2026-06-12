@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Iframes</title>
+</head>
+
+<body>
+    <h1>Conhecendo o elemento iframe</h1>
+    <p>O elemento <code>&lt;Iframe&gt;</code> Permite incorporar outra página <strong>HTML</strong> dentro da página
+        atual </p>
+    <!-- (I) - Inline e (frame) -  -  -->
+    <!--&lt e &gt faz com que fique a tag no texto-->
+    <h2>Criando iframe do Youtube</h2>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/xmyt2wId5m8?si=qHs36SRkfK7kT2PH"
+        title="Vídeo do canal henrique mostrando a luta de Asta e Yami contra Dante"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2 style="color: rgb(37, 109, 4);">Adicionando um frame do maps</h2>
+    <!-- Para colocar o color tem que ser com o style/estilo-->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1876948.2021780468!2d-45.942454819085064!3d-23.246199724797332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f003b79b539%3A0x3afba04c62ce65b5!2sCristo%20Redentor!5e0!3m2!1spt-BR!2sbr!4v1780966796925!5m2!1spt-BR!2sbr"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"> </iframe>
+
+    <hr>
+
+    <h2>Exemplo com página interna</h2>
+    <iframe src="04-imagens.html" frameborder="0" width="500" height="400"></iframe>
+    <hr>
+    <!--IDENTAÇÃO OU INDENTAÇÃO - É a forma que temos dentro do código para visualizar o código do jeito certo e mais organizado-->
+
+    <h2>Galeria de imagens com iframe</h2>
+    <iframe src="assets/img/a-voz-do-silencio.png" width="600" height="400" name="meuframe"></iframe>
+    <a href="assets/img/a-voz-do-silencio.png" target="meuframe">imagem 1</a>
+    <a href="assets/img/borboleta-na-flor.jpg" target="meuframe">imagem 2</a>
+    <a href="assets/img/flor-dahila.jpg" target="meuframe">imagem 3</a>
+    <a href="assets/img/hamster-fofo.jpg" target="meuframe">imagem 4</a>
+
+
+
+</body>
+
+</html

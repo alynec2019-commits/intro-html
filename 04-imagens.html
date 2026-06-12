@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo imagens HTML</title>
+</head>
+
+<body>
+    <h1>Conhecendo o elemento de imagem</h1>
+    <hr>
+
+    <h2>Sobre as imagens</h2>
+    <!-- <abbr> serve para abreviação, a gente consegue abreviar as palavras. Colocamos o texto dentro do titulo e antes do abbr colocamos a sigla da abreviação-->
+    <p>Trabalhar com imagens no <abbr title="HyperText Markup Language"> HTML</abbr> envolve muito mais do que apenas
+        colocar uma foto na página.</p>
+    <p>Existem várias formas, técnicas e recursos para exibir, organizar, otmizar e adaptar imagens para diferentes
+        dispositivos</p>
+
+    <h3>Formatos mais comuns de imagens</h3>
+    <ul>
+        <li><Strong>JPEG/JPG</Strong>: Fotos e imagens compactadas</li>
+        <li><Strong>PNG</Strong>: Suporta transparência </li>
+        <li><Strong>WEBp</Strong>Formato moderno e leve (também suporta transparência)</li>
+        <li><Strong>Gif</Strong>: Animações simples</li>
+        <li><Strong>Avif</Strong>: Excelente qualidade com um tamanho pequeno (também suporta transparência)</li>
+    </ul>
+
+
+    <hr>
+    <h2>Sobre o elemento img</h2>
+    <p>A forma mais comum de inserir imagens no HTML é usando a tag <code>img</code></p>
+    <h3>Exemplo prático</h3>
+    <p>Trabalhando com links externos</p>
+    <p>Linsks externos = Links ou URL de sites</p>
+    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Computador com códigos sendo exibido em um editor de código" height="380" width="560">
+
+    <p><b>SRC</b> (source/fonte) - Atributo responsável pelo caminho da imagem, ou seja, define onde está a imagem</p>
+    <p><b>ALT</b> é um texto alternativo caso a imagem não carregue, então temos que colocar uma descrição bem precisa para a imagem</p>
+    <hr>
+
+    <h4>Trabalhando com imagens locais</h4>
+    <img src="assets/img/computador-codigo.avif" alt="ilustração de um computador mostrando o HTML, CSS e PHP"
+        height="380" width="530">
+
+    <!-- Pra mim colocar uma imagem que não está na internet, eu preciso baixar a imagem, criar uma pasta e colocar a imagem dentro dessa pasta-->
+    <!-- LEMBRA DE VER SE A IMAGEM ESTÁ DISPONIVEL DE GRAÇA -->
+    <p>ALT (alternative/alternativo) é o texto alternativo queserá apresentado caso a imagem não carrege</p>
+    <p>O atributo alt é <strong> MUITO IMPORTANTE</strong></p>
+    <ul>
+        <li>Acessibilidade</li>
+        <li>leitores de tela</li>
+        <li>SEO</li> <!-- Ele avalia o ALT, ou seja, ele vê o texto alternativo-->
+        <li>Fallback</li>
+    </ul>
+    <hr>
+
+    <h4>Ajustando o tamanho das imagens</h4>
+    <img src="assets/img/hamster-fofo.jpg" alt="esse é um hamster dourado super fofo " height="380" width="600">
+
+    <p><b>HEIGHT</b> - O atributo height serve para ajustar o tamanho da altura da imagem</p>
+    <p><b>WIDTH</b> - O atributo Width serve para ajustar o tamanho da largura da imagem</p>
+    <!-- <height> é altura da imagem e <width> é a largura da imagem-->
+
+    <!-- Os pixel (px) são uma unidade de medida usada para definir TAMANHOS e ESPAÇAMENTOS na interface-->
+    <hr>
+
+    <h2>Trabalhando com imagens responsivas</h2>
+
+    <p>O <code>picture</code> é um elemento do HTML usado para imagens <em>responsivas e adaptativas.</em></p>
+    <p>Essa tag permite o seguinte:</p>
+    <ul>
+        <li>Trocar a imagem conforme o <em>tamanho</em> da tela</li>
+        <li>Melhoras a performance</li>
+        <li>Carregar imagens diferentes para mobile, tablet e desktop</li>
+    </ul>
+
+    <picture>
+        <source srcset="assets/img/arvore-cerejeira-mobile.jpg" media="(max-width:600px)" type="image/jpg">
+        <source srcset="assets/img/arvore-cerejeira-tablet.jpg" media="(max-width:1024px)" type="image/jpg">
+
+        <img src="assets/img/arvore-cerejeira-desktop.jpg"
+            alt="é uma paisagem linda e nessa páisagem tem um lago grande com varias árvores de cerejeiras na beira do lago"
+            height="500" width=" 700">
+    </picture>
+    <!-- img como fallback -  o fallback é praticamente um plano B, ou seja, algo que entra em ação quando a opção principal não funciona-->
+
+    <!-- Source é responsavel pelo caminho da imagem-->
+    <p><b>Srcset</b> - serve pra oferecer multiplas versões de uma mídia e deixar o navegadorescolher a mais adequada
+    conforme tamanho da tela, formato suportado, largura disponível, performace.</p>
+
+
+
+
+
+
+
+</body>
+
+</html>

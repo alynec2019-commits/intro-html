@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo listas HTML</title>
+</head>
+
+<body>
+    <h1>Entendendo as listas HTML</h1>
+    <p>As listas do HTML, servem para organizar <strong>informações relacionadas</strong> de forma estruturada e <em>semântica</em></p>
+    <p>As listas são compostas por elementos chamados de LI.</p>
+    <p>Os LI (List Itrm/ Item da lista). As listas não possuem Limite de itens</p>
+    <hr>
+
+    <h2>Ordered List - OL</h2>
+    <P>O elemento OL serve para criarmos uma lista ordenada, ou seja, com ordem, importancia</P>
+    <p>Normalmente aparece numerada</p>
+
+    <h3>Listas de compras</h3>
+    <!-- O Type= serve para musar o estilo da contagem-->
+    <!-- O Start= Serve para iniciar a contagem a partir de um determinado número-->
+    <!-- O Reversed = Serve para inverter a ordem da contagem da lista-->
+    <ol type="A"  start="8"  reversed> 
+        <li>Banana</li>
+        <li>Maçã</li>
+        <li>Laranja</li>
+        <li>Uva</li>
+    </ol>
+    <hr>
+
+    <h2>Urnordered List</h2>
+    <p>Serve para criar listas sem ordem específica. Normalmente aparece com bolinhas (bullets)</p>
+    <h3>Exemplo rápido</h3>
+    <ul>
+        <li>Trabalhar</li>
+        <li>Visitar minha Tia</li>
+        <li>Vou no parque</li>
+    </ul>
+    <h3>Curiosidade importante</h3>
+    <p>Você pode colocar lista dentro de listas</p>
+    <h4>Exemplo 1 - Listas dentro de listas</h4>
+    <!--<OL> ou <UL> não aceita receber outros itens dentro como <P> ou <H2>, ele só aceita as tags de listas <LI>-->
+    <!--Podemos usar o <UL> para organizar tópicos, e podemos fazer tópicos dentro dos tópico-->
+    <ul>
+       <li>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam labore nulla sint, vitae ad illo itaque recusandae, nam corporis sapiente quidem eum cum. Beatae, eveniet vel rerum praesentium asperiores sit!</P>
+       </li>
+       <li>FrontEnd
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+       </li>
+    </ul>
+    <h4>Exemplo 2</h4>
+    <ol>
+        <li>Comprar Ingredientes
+            <ul>
+                <li>Farinha</li>
+                <li>Ovo</li>
+                <Li>Leite</Li>
+            </ul>
+            
+        </li>
+        <li>Preparar a massa</li>
+        <li>Assar o bolo</li>
+    </ol>
+    <hr>
+    <!--Grande parte dos menus dos sites usam listas-->
+
+    <h2>Description List - DL</h2>
+    <p>O elemento DL é usado para criar uma <strong>lista de definição</strong> no HTML</p>
+
+    <h3>Exemplo de aplicação</h3>
+    <!--Criando a lista de definição-->
+    <dl>
+        <!-- <DT> - Descrição da palavra, termo ou título a ser explicado-->
+        <dt>HTML</dt>
+        <dd>Linguagem usada para estruturar páginas web</dd>
+        <!-- Descrição e definição do termo apresentado -->
+         <dt>CSS</dt>
+         <dd>Linguagem para estilizar páginas web</dd>
+    </dl>
+
+
+</body>
+
+</html>

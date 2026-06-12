@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+
+<body>
+    <h1>Conhecendo o elemento de navegação</h1>
+    <hr>
+    <h2>Definição de link</h2>
+    <p>Um link é um elemento que permite navegar de uma <strong>página</strong>, <strong>documento</strong> ou
+        <strong>recurso</strong> para outro.</p>
+
+    <p>No HTML, a gente usa os links para:</p>
+    <ul>
+        <li>Abrir um site <em>externo</em></li>
+        <li>Levar o usuário para outra página do site</li>
+        <li>Iniciar dowload de arquivos</li>
+        <li>Abrir aplicativos como e-mail e telefone</li>
+    </ul>
+
+    <h2>Conhecendo o elemento a</h2>
+    <p>O elemento usado para criar links é a tag <b>a (anchor)</b></p>
+    <p><b>href</b> (HyperText Reference) - Referência de hipertexto</p>
+
+    <p><b>targuet</b> - Define onde o conteúdo do link será aberto quando o usuário clicar nele</p>
+    <ul>
+        <li><strong>self</strong>: Valor padrão do navegador. Indica que o site será aberto na mesma aba</li>
+        <li><strong>_blank</strong>: Abre uma nova aba ou janela dependendo do navegador</li>
+        <li><strong>_parent</strong>: Usamos quando a página está dentro de um <code>Frame/ifreme</code> , ou seja, o
+            link abre o frame no pai</li>
+        <li><strong>_top</strong>: abre o link ocupando toda a janela do navegador, saindo de todos os frames.</li>
+    </ul>
+
+    <h3>Navegação externa</h3>
+
+    <a href="https://www.google.com" target="_blank">Acesse o site do google</a>
+    <hr>
+
+    <h3>Navegação interna</h3>
+
+    <!--Sempre que vamos navegar apenas no nosso site, o link tem que abrir na mesma aba e não em uma nova aba. Se o recurso é meu, ou seja, o link está na minha máquina, tem que abrir na mesma aba do site e se for um link de fora, então o normal é abrir uma aba nova-->
+
+    <!--Se eu quero que o link de fora abra em uma nova aba, usamos a tag "targuet"-->
+    <a href="04-imagens.html">Saiba mais sobre imagens</a>
+
+    <p>Obs: Sempre que a navegação apontar para um site externo, utilizamos um protocolo <u>https</u>. Caso a navegação
+        seja interna, <u>utilizamos apenas o nome ou indicamos o caminho do arquivo</u></p>
+    <hr>
+
+    <h2>Explorando mais ideias com elementos de link</h2>
+    <h3>Usando o elemento de link para dowload</h3>
+
+    <a href="assets/img/a-voz-do-silencio.png" download> Baixe a imagem clicando aqui </a>
+
+    <!-- br - break row - Quebra de linha-->
+    <br>
+
+    <a href="assets/img/borboleta-na-flor.jpg" download="borboleta"> Clique aqui</a>
+    <hr>
+
+    <h3>Acessando aplicativos</h3>
+    <p>Acessando/abrindo email</p>
+    <p>
+        <!-- "Mail" email w "to" é para-->
+        <a href="mailto:alynec2019@gmail.com">Email: alynec2019@gmail.com</a>
+    </p>
+
+    <p>Acessando/abrindo telefone</p>
+    <p>
+        <a href="tel:+5511971827167">Celular: (11) 97182-7167</a>
+    </p>
+
+    <p>Acessando o Whatsapp</p>
+
+    <p>
+        <a href="https://wa.me/5511971827167" target="_blank">Entre em contato com Alyne Cristina</a>
+    </p>
+    <hr>
+
+
+    <a href="">Elemento 1</a>
+    <a href="">Elemento 2</a>
+
+    <p>A tag <code>a</code> é um elemento do tipo <strong>inline</strong>.</p>
+    <!--Elemento de bloco vai ocupar a tela inteira e os elementos inline não e por isso fica um do lado do outro-->
+
+    <a href="https://unsplash.com" target="_blank">
+        <img src="assets/img/flor-dahila.jpg" alt="Flor dahila em um tom de degradê" height="200" width="130">
+    </a>
+    <!-- Tudo relacionado a navegação, vai ser usado a tag de ancora "a"-->
+
+</body>
+
+</html>
